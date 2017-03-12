@@ -1,5 +1,5 @@
 var Presenter = {
-  // Create DOMParser if we don't have, then parse our TVML string
+  // Create DOMParser if it's missing, then parse our TVML string
   makeDocument: function(resource) {
     if (!Presenter.parser) {
       Presenter.parser = new DOMParser();
